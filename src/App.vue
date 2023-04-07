@@ -5,8 +5,8 @@
     <v-app-bar app>
       <!-- -->
       <v-tabs bg-color="white">
-        <v-tab><RouterLink to="/">Home</RouterLink></v-tab>
-        <v-tab><RouterLink to="/camera">Camera page</RouterLink></v-tab>
+        <v-tab to="/">Home</v-tab>
+        <v-tab to="/camera"><v-icon>mdi-phone</v-icon>Camera</v-tab>
       </v-tabs>
     </v-app-bar>
 
@@ -26,6 +26,6 @@
   </v-app>
 </template>
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 </script>
 <style scoped></style>
