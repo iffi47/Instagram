@@ -1,8 +1,8 @@
 <template>
   <!-- App.vue -->
 
-  <v-app>
-    <v-app-bar app class="bg-white text--grey-10 constrain" elevation="2" density="comfortable">
+  <v-app id="app">
+    <v-app-bar class="bg-white text--grey-10" elevation="2" density="comfortable">
       <v-app-bar-title
         tag="h1"
         class="text-hotel-grand"
@@ -24,11 +24,10 @@
     <!-- Sizes your content based upon application components -->
     <v-main>
       <!-- Provides the application the proper gutter -->
-      <v-container fluid>
-        <!--  vue-router -->
 
-        <RouterView />
-      </v-container>
+      <!--  vue-router -->
+
+      <RouterView />
     </v-main>
 
     <v-footer app class="hidden-md-and-up">
@@ -53,5 +52,9 @@ import { RouterView } from 'vue-router'
   /* font-family: 'Grand Hotel', cursive; */
   font-size: 60px;
   text-align: center;
+}
+.constrain {
+  max-width: 975px;
+  margin: 0 auto;
 }
 </style>
