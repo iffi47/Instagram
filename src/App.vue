@@ -2,11 +2,16 @@
   <!-- App.vue -->
 
   <v-app>
-    <v-app-bar app class="bg-white text--grey-10" border="true">
-      <v-app-bar-title class="text-hotel-grand">Instagram</v-app-bar-title>
+    <v-app-bar app class="bg-white text--grey-10 constrain" elevation="2" density="comfortable">
+      <v-app-bar-title
+        tag="h1"
+        class="text-hotel-grand"
+        height="30px"
+        text="Instagram"
+      ></v-app-bar-title>
       <!-- -->
-
-      <v-tabs d-flex grow="boolean">
+      <v-divider class="border-opacity-25 hidden-sm-and-down" inset vertical></v-divider>
+      <v-tabs d-flex grow="boolean" class="hidden-sm-and-down">
         <v-tab hide-slider="false" to="/">
           <v-icon icon="mdi-home-outline" size="large"></v-icon
         ></v-tab>
@@ -26,7 +31,7 @@
       </v-container>
     </v-main>
 
-    <v-footer app>
+    <v-footer app class="hidden-md-and-up">
       <!-- -->
 
       <v-tabs d-flex grow="boolean">
