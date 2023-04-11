@@ -48,6 +48,9 @@
 import { RouterView } from 'vue-router'
 </script>
 <style scoped>
+#app {
+  background-color: #e0e0e0;
+}
 .v-toolbar-title__placeholder {
   /* font-family: 'Grand Hotel', cursive; */
   font-size: 60px;
