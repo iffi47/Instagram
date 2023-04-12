@@ -18,7 +18,7 @@
           <v-card-title> Iftikhar Ahmad </v-card-title>
 
           <v-card-subtitle>{{ post.location }}</v-card-subtitle>
-          <v-spacer class="mx-4 mb-1"></v-spacer>
+          <v-spacer class="mx-auto mb-1"></v-spacer>
           <v-img :src="post.imageUrl" height="200px" cover></v-img>
           <v-card-actions>
             <v-spacer></v-spacer>
@@ -36,7 +36,7 @@
               icon="mdi-share-variant"
             ></v-btn>
           </v-card-actions>
-          <v-spacer class="mx-4 mb-1"></v-spacer>
+          <v-spacer class="mx-auto mb-1"></v-spacer>
           <v-card-title>Lorem, ipsum dolor sit </v-card-title>
           <v-card-text class="text-caption">{{ newDate(post.date) }}</v-card-text>
           <v-card-text
@@ -45,19 +45,18 @@
           >
         </v-card></v-col
       >
-      <v-col cols="4">
-        <v-card class="mx-auto my-4" max-width="500" position="fixed">
-          <template v-slot:prepend>
-            <v-avatar
-              size="60"
-              color="grey-darken-3"
-              image="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light"
-            ></v-avatar>
-          </template>
+      <v-col cols="4" class="hidden-sm-and-down mx-auto">
+        <v-sheet class="my-4 pa-4 d-block sheeet" max-width="500" position="fixed">
+          <v-avatar
+            size="60"
+            color="grey-darken-3"
+            image="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light"
+          ></v-avatar>
+
           <v-card-title> Iftikhar Ahmad </v-card-title>
 
           <v-card-subtitle>Lahore, Punjab</v-card-subtitle>
-        </v-card>
+        </v-sheet>
       </v-col>
     </v-row>
   </v-container>
@@ -126,5 +125,8 @@ export default {
 .constrain {
   max-width: 975px;
   margin: 0 auto;
+}
+.sheeet {
+  background-color: #e0e0e0;
 }
 </style>

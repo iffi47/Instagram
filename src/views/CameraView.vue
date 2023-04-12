@@ -1,7 +1,5 @@
 <template>
-  <div class="camera">
-    <h1>This is an Camera page page This is really a camera page</h1>
-  </div>
+  <v-container class="grey-lighten-5"> </v-container>
 </template>
 <script>
 import { defineComponent } from 'vue'
