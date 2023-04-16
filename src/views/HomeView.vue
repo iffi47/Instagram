@@ -1,6 +1,6 @@
 <template>
   <v-container class="grey-lighten-5">
-    <v-row no-gutters="true">
+    <v-row no-gutters="true" >
       <v-col cols="8"
         ><v-card
           class="mx-auto my-4"
@@ -115,8 +115,9 @@ export default {
   },
   methods: {
     newDate(time) {
-      let date = new Date(time)
-      return date.toLocaleDateString()
+      // let date = new Date(time)
+      // return date.toLocaleDateString()
+      return this.$dateFns.format(time, 'LLL d p')
     }
   }
 }
@@ -130,3 +131,15 @@ export default {
   background-color: #e0e0e0;
 }
 </style>
+<!-- export default {
+  data() {
+    return {
+      date: new Date()
+    }
+  },
+  computed: {
+    formattedDate() {
+      return this.$dateFns.format(this.date, 'MM/dd/yyyy')
+    }
+  }
+} -->
